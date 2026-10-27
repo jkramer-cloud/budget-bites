@@ -16,10 +16,10 @@ New players select **Start your food mission**. The game initially provides a fi
 
 1. **Home:** Launch or resume the mission, view progress, and see daily cooking tips.
 2. **Family:** Add/remove fictional family members, specify ages and simulated food allergies, set a budget, and choose 3, 5, or 7 days.
-3. **Planner:** Fill a calendar with breakfast, lunch, dinner, and snack. Browse 33 recipes and choose a varied or budget-friendly menu.
+3. **Planner:** Fill a calendar with breakfast, lunch, dinner, and snack. Browse 68 recipes and choose a varied or budget-friendly menu.
 4. **Market:** See required grocery quantities, buy *whole packages* at fictional prices, compare unit costs, and monitor pantry stock and budget remaining.
 5. **Kitchen:** Follow specific recipe instructions with food-safety practice questions, or use Quick Cook to simulate meals rapidly. Each dish consumes pantry ingredients.
-6. **Results:** See completion, stars, financial results, food-group variety, and approximate nutrient totals (energy, protein, carbohydrate, fat, fiber, sodium). Switch between daily averages and entire-mission totals.
+6. **Results:** Compare the nutrition in the planned menu with meals actually served, using age-group educational protein/fiber benchmarks and a sodium comparison level. Choose any family member, change nutrient and daily/mission views, explore day-by-day charts, grocery spending by aisle, food-group frequency, and individual nutrition summaries.
 
 ## Controls and scoring
 
@@ -59,7 +59,7 @@ No build system, npm, backend, authentication, images, fonts, or external servic
 
 ## Important safety and nutrition limitations
 
-**Budget Bites is a game, not a real-world food safety, allergy, or dietary planning tool.** Prices, package sizes, meal nutrient numbers, and age-related serving multipliers are deliberately approximate educational examples. The "allergy" checks only match a simplified ingredient-tag list; they cannot detect cross-contact, manufacturing risk, or omitted allergens in actual products. Do not rely on the simulator to decide whether a meal is safe.
+**Budget Bites is a game, not a real-world food safety, allergy, or dietary planning tool.** Prices, package sizes, meal nutrient numbers, and age-related serving multipliers are deliberately approximate educational examples. Reference markers are sourced from published age-group intake tables, but they do not provide personalized nutrition goals, diagnoses or a determination that an individual has eaten too much or too little. Younger and older family members have different benchmarks, but sex-specific adult recommendations are shown as ranges rather than making assumptions about a person. No target is assigned to calorie consumption. The "allergy" checks only match a simplified ingredient-tag list; they cannot detect cross-contact, manufacturing risk, or omitted allergens in actual products. Do not rely on the simulator to decide whether a meal is safe.
 
 When preparing actual food, read labels, observe local food-safety requirements, check poultry with a calibrated food thermometer (165°F / 74°C), refrigerate perishable leftovers promptly, and have responsible adult supervision for hot appliances, sharp utensils, and other hazards. The nutrition dashboard does not prescribe calorie targets for children or adults.
 
@@ -86,6 +86,15 @@ Any added recipe must use existing grocery item IDs or add new corresponding ite
 
 ## Version
 
-**v1.0** — 33 recipes, 3/5/7-day planning, family portions and allergy warnings, shopping package inventory, guided cooking, quick simulation, nutrition and budget reports, local saving, and CSV/JSON export.
+**v2.0** — 68 recipes, 10 additional grocery items, planned-versus-served nutrition visualizations, age-group protein/fiber/sodium comparisons, daily trends, aisle spending graphs, and food-group coverage; continuing 3/5/7-day planning, family portions and allergy warnings, shopping package inventory, guided cooking, quick simulation, nutrition and budget reports, local saving, and CSV/JSON export.
 
 Planned ideas for later: scenario events (price changes, pantry surprises), more recipes, leftovers that can be reheated as future meals, student-designed recipes, printable shopping lists, cooking skill badges, and optional classroom assignment modes.
+
+
+## Nutrition graph reference notes (V2)
+
+- **Planned** values sum the recipes in each calendar slot. **Served** values sum only recipes completed in the Kitchen. Blank days or unserved meals contribute zero, so partially completed plans do not represent complete daily diets.
+- Protein and fiber **educational** reference points follow the National Academies Dietary Reference Intake age/life-stage tables; age 9+ references where sex matters appear as a band, not an individualized goal. Sodium uses age-group chronic disease risk reduction comparison levels. Carbohydrates, energy, and fat are visualized without personal intake targets.
+- The game is not estimating vitamin/mineral sufficiency, micronutrient deficiencies, or fitness/weight goals. Recipes use rough per-serving estimates and the same simplified age-based portion multiplier as V1.
+- Sources: [National Academies DRI tables](https://www.ncbi.nlm.nih.gov/books/NBK545442/) and [NIH explanation of Daily Values](https://ods.od.nih.gov/HealthInformation/dailyvalues/).
+- All five files must be replaced in the repo for V2. The `budget-bites-v1-save` storage key remains unchanged so V1 browser progress can be loaded by V2. Export a JSON backup before updating.
