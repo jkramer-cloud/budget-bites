@@ -1,0 +1,398 @@
+{
+  "schemaVersion": 1,
+  "stations": [
+    {
+      "id": "sink",
+      "name": "Sink & washing",
+      "icon": "🚰",
+      "hint": "Handwashing and rinsing produce"
+    },
+    {
+      "id": "pantry",
+      "name": "Pantry & tools",
+      "icon": "🗄️",
+      "hint": "Gather tools and measure dry foods"
+    },
+    {
+      "id": "prep",
+      "name": "Prep counter",
+      "icon": "🔪",
+      "hint": "Use a stable board and safe cutting practice"
+    },
+    {
+      "id": "counter",
+      "name": "Mixing counter",
+      "icon": "🥣",
+      "hint": "Measure liquids and combine ingredients"
+    },
+    {
+      "id": "stove",
+      "name": "Stovetop",
+      "icon": "🍲",
+      "hint": "Turn heat on, stir, and turn it off"
+    },
+    {
+      "id": "serve",
+      "name": "Serving table",
+      "icon": "🍽️",
+      "hint": "Plate food and review safety"
+    }
+  ],
+  "toolCatalog": {
+    "measuring-cup": {
+      "name": "Measuring cup",
+      "icon": "🥛",
+      "description": "For accurately measuring oats and milk"
+    },
+    "saucepan": {
+      "name": "Saucepan",
+      "icon": "🍲",
+      "description": "For gently heating the oat mixture"
+    },
+    "spoon": {
+      "name": "Wooden spoon",
+      "icon": "🥄",
+      "description": "For stirring safely"
+    },
+    "cutting-board": {
+      "name": "Cutting board",
+      "icon": "🪵",
+      "description": "For a stable cutting surface"
+    },
+    "knife": {
+      "name": "Kitchen knife",
+      "icon": "🔪",
+      "description": "Adult-supervised cutting tool"
+    },
+    "serving-bowl": {
+      "name": "Serving bowls",
+      "icon": "🥣",
+      "description": "To portion the cooked oats"
+    },
+    "grater": {
+      "name": "Grater",
+      "icon": "🧀",
+      "description": "Not used for this recipe"
+    },
+    "whisk": {
+      "name": "Whisk",
+      "icon": "🍴",
+      "description": "Not needed for this recipe"
+    }
+  },
+  "recipes": [
+    {
+      "id": "banana-oats",
+      "version": 1,
+      "difficulty": "Beginner",
+      "kitchenTitle": "Banana Cinnamon Oats",
+      "intro": "Make warm oats in a hands-on kitchen simulation: wash, measure, chop, stir, use low heat, switch the stove off, and serve.",
+      "servings": 4,
+      "estimatedMinutes": 12,
+      "ingredientIds": [
+        "oats",
+        "banana",
+        "milk",
+        "cinnamon"
+      ],
+      "requiredTools": [
+        "measuring-cup",
+        "saucepan",
+        "spoon",
+        "cutting-board",
+        "knife",
+        "serving-bowl"
+      ],
+      "skills": [
+        "Clean hands and surfaces",
+        "Choose safe tools",
+        "Measure ingredients",
+        "Cut with supervision",
+        "Manage heat",
+        "Stir and serve"
+      ],
+      "allergenNote": "Contains milk when prepared with dairy milk. Read real package labels for allergies or cross-contact.",
+      "safety": "Simulation only. An adult must supervise real knives and stovetops. Follow the oat package for cooking time and liquid amounts.",
+      "steps": [
+        {
+          "id": "wash-hands",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Prepare clean hands",
+          "instruction": "At the sink, practice the correct handwashing order before touching food.",
+          "sequence": [
+            {
+              "id": "soap",
+              "label": "Apply soap",
+              "icon": "🧼"
+            },
+            {
+              "id": "scrub",
+              "label": "Scrub for at least 20 seconds (simulated)",
+              "icon": "🫧"
+            },
+            {
+              "id": "rinse",
+              "label": "Rinse and dry hands",
+              "icon": "🚰"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "In a real kitchen, scrub with soap for at least 20 seconds. This activity shortens the time to a few clicks."
+        },
+        {
+          "id": "get-tools",
+          "station": "pantry",
+          "action": "collect",
+          "title": "Find your cooking tools",
+          "instruction": "Select every tool this recipe requires. Ignore the two distractors.",
+          "required": [
+            "measuring-cup",
+            "saucepan",
+            "spoon",
+            "cutting-board",
+            "knife",
+            "serving-bowl"
+          ],
+          "choices": [
+            "grater",
+            "cutting-board",
+            "measuring-cup",
+            "whisk",
+            "spoon",
+            "knife",
+            "saucepan",
+            "serving-bowl"
+          ],
+          "tools": [
+            "measuring-cup",
+            "saucepan",
+            "spoon",
+            "cutting-board",
+            "knife",
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Use a stable board for cutting. Sharp knives require adult supervision."
+        },
+        {
+          "id": "measure-oats",
+          "station": "pantry",
+          "action": "measure",
+          "title": "Measure rolled oats",
+          "instruction": "Each tap adds ½ cup of dry oats. Measure a total of 2 cups for the four-serving demonstration.",
+          "ingredient": "oats",
+          "target": 2,
+          "increment": 0.5,
+          "unit": "cups",
+          "tools": [
+            "measuring-cup"
+          ],
+          "ingredients": [
+            "oats"
+          ],
+          "safety": "Measure on a level surface. The actual recipe is scaled in the main meal planner for your household."
+        },
+        {
+          "id": "wash-bananas",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Clean the produce",
+          "instruction": "Wash the banana peel before handling and cutting, and keep your prep area clean.",
+          "sequence": [
+            {
+              "id": "water",
+              "label": "Turn on running water",
+              "icon": "🚰"
+            },
+            {
+              "id": "rinse",
+              "label": "Rinse the produce",
+              "icon": "🍌"
+            },
+            {
+              "id": "water-off",
+              "label": "Turn off the tap",
+              "icon": "💧"
+            }
+          ],
+          "tools": [],
+          "ingredients": [
+            "banana"
+          ],
+          "safety": "Rinse fresh produce under running water; do not use soap on produce."
+        },
+        {
+          "id": "chop-banana",
+          "station": "prep",
+          "action": "chop",
+          "title": "Slice the bananas",
+          "instruction": "Tap each banana slice on the board to practice making five careful cuts.",
+          "target": 5,
+          "tools": [
+            "cutting-board",
+            "knife"
+          ],
+          "ingredients": [
+            "banana"
+          ],
+          "safety": "Use the claw grip and a stable board. Ask an adult to handle the real knife."
+        },
+        {
+          "id": "measure-milk",
+          "station": "counter",
+          "action": "measure",
+          "title": "Measure milk",
+          "instruction": "Each tap pours ½ cup of milk. Aim for 2 cups in this demonstration.",
+          "ingredient": "milk",
+          "target": 2,
+          "increment": 0.5,
+          "unit": "cups",
+          "tools": [
+            "measuring-cup"
+          ],
+          "ingredients": [
+            "milk"
+          ],
+          "safety": "Keep milk refrigerated before use. Check the actual product label for milk allergies."
+        },
+        {
+          "id": "mix-pot",
+          "station": "counter",
+          "action": "combine",
+          "title": "Combine the ingredients",
+          "instruction": "Place the measured oats and milk into the saucepan. Add water only as directed on the actual oat package.",
+          "sequence": [
+            {
+              "id": "oats",
+              "label": "Add measured oats",
+              "icon": "🌾"
+            },
+            {
+              "id": "milk",
+              "label": "Add measured milk",
+              "icon": "🥛"
+            },
+            {
+              "id": "water",
+              "label": "Check package directions for water",
+              "icon": "💧"
+            }
+          ],
+          "tools": [
+            "saucepan",
+            "spoon"
+          ],
+          "ingredients": [
+            "oats",
+            "milk"
+          ],
+          "safety": "Real quantities and cooking time vary by oat type. Follow package directions."
+        },
+        {
+          "id": "stove-on",
+          "station": "stove",
+          "action": "heat",
+          "title": "Start the stovetop safely",
+          "instruction": "Set the simulated burner to LOW and place the pan on the burner.",
+          "state": "on",
+          "tools": [
+            "saucepan"
+          ],
+          "ingredients": [
+            "oats",
+            "milk"
+          ],
+          "safety": "An adult should supervise any real stovetop use. Turn pan handles inward and keep loose items away."
+        },
+        {
+          "id": "stir-oats",
+          "station": "stove",
+          "action": "stir",
+          "title": "Simmer and stir gently",
+          "instruction": "Stir five times. This simulation represents gradual heating; real oats require the package cooking time.",
+          "target": 5,
+          "tools": [
+            "spoon",
+            "saucepan"
+          ],
+          "ingredients": [
+            "oats",
+            "milk"
+          ],
+          "safety": "Keep hands clear of hot steam and never leave cooking unattended."
+        },
+        {
+          "id": "stove-off",
+          "station": "stove",
+          "action": "heat",
+          "title": "Switch the stove off",
+          "instruction": "The food is ready in our simulation. Turn the burner OFF before leaving the stovetop.",
+          "state": "off",
+          "tools": [
+            "saucepan"
+          ],
+          "ingredients": [
+            "oats",
+            "milk"
+          ],
+          "safety": "Confirm the real burner is fully off. Allow the pan to cool before handling."
+        },
+        {
+          "id": "plate-oats",
+          "station": "serve",
+          "action": "combine",
+          "title": "Build the finished bowls",
+          "instruction": "Assemble the cooked oats, sliced banana, and cinnamon in that order.",
+          "sequence": [
+            {
+              "id": "oats",
+              "label": "Spoon in cooked oats",
+              "icon": "🥣"
+            },
+            {
+              "id": "banana",
+              "label": "Add banana slices",
+              "icon": "🍌"
+            },
+            {
+              "id": "cinnamon",
+              "label": "Sprinkle cinnamon",
+              "icon": "✨"
+            }
+          ],
+          "tools": [
+            "serving-bowl",
+            "spoon"
+          ],
+          "ingredients": [
+            "oats",
+            "banana",
+            "cinnamon"
+          ],
+          "safety": "Use a clean serving spoon, and check whether the food is too hot to eat."
+        },
+        {
+          "id": "safety-check",
+          "station": "serve",
+          "action": "quiz",
+          "title": "Serve and store safely",
+          "instruction": "Choose the best way to handle leftovers.",
+          "question": "What should happen to perishable leftovers?",
+          "options": [
+            "Leave them at room temperature until tomorrow",
+            "Refrigerate promptly, generally within 2 hours",
+            "Keep them in the hot pan overnight"
+          ],
+          "correct": 1,
+          "tools": [
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Refrigerate perishable leftovers promptly, generally within 2 hours. Use shallow containers to cool them faster."
+        }
+      ]
+    }
+  ]
+}

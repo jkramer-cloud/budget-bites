@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "ingredientCatalog": [
+    {
+      "id": "example-herb",
+      "name": "Example fresh herb",
+      "unit": "tbsp",
+      "packQty": 12,
+      "price": 2.5,
+      "category": "Produce",
+      "allergens": []
+    }
+  ],
+  "mealCatalog": [
+    {
+      "id": "example-vegetable-pasta",
+      "name": "Example Vegetable Pasta",
+      "meal": "Dinner",
+      "emoji": "🍝",
+      "desc": "Sample recipe for future extension; revise before publishing.",
+      "ingredients": {
+        "pasta": 8,
+        "tomato": 2,
+        "example-herb": 2
+      },
+      "nutrition": [
+        440,
+        14,
+        72,
+        9,
+        11,
+        420
+      ],
+      "groups": [
+        "grains",
+        "vegetable"
+      ],
+      "minutes": 25,
+      "method": [
+        "Measure pasta and cook following its package directions.",
+        "Simmer tomatoes, add herbs, mix and serve."
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "example-vegetable-pasta",
+      "version": 1,
+      "difficulty": "Beginner",
+      "kitchenTitle": "Example Vegetable Pasta",
+      "intro": "Replace with full, verified recipe content.",
+      "servings": 4,
+      "estimatedMinutes": 25,
+      "ingredientIds": [
+        "pasta",
+        "tomato",
+        "example-herb"
+      ],
+      "requiredTools": [
+        "saucepan",
+        "spoon"
+      ],
+      "skills": [
+        "Measure",
+        "Stir"
+      ],
+      "allergenNote": "Check the labels of all products, including wheat allergens in the pasta.",
+      "safety": "Adult supervision required for stovetop use.",
+      "steps": [
+        {
+          "id": "prep",
+          "station": "counter",
+          "action": "measure",
+          "title": "Measure pasta",
+          "instruction": "Tap the button to measure eight ounces of dry pasta in the simulated lesson.",
+          "ingredient": "pasta",
+          "target": 8,
+          "increment": 1,
+          "unit": "oz",
+          "ingredients": [
+            "pasta"
+          ],
+          "tools": [
+            "measuring-cup"
+          ],
+          "safety": "Follow the package directions. For real cooking, weigh pasta with a food scale rather than a measuring cup."
+        },
+        {
+          "id": "heat",
+          "station": "stove",
+          "action": "heat",
+          "title": "Heat the pan",
+          "instruction": "Simulate turning a burner on low.",
+          "state": "on",
+          "ingredients": [
+            "tomato"
+          ],
+          "tools": [
+            "saucepan"
+          ],
+          "safety": "Adult supervision required."
+        },
+        {
+          "id": "stir",
+          "station": "stove",
+          "action": "stir",
+          "title": "Stir sauce",
+          "instruction": "Simulate stirring the warmed sauce.",
+          "target": 4,
+          "ingredients": [
+            "tomato",
+            "example-herb"
+          ],
+          "tools": [
+            "spoon"
+          ],
+          "safety": "Stay with the pan."
+        },
+        {
+          "id": "off",
+          "station": "stove",
+          "action": "heat",
+          "title": "Turn burner off",
+          "instruction": "Switch the burner off.",
+          "state": "off",
+          "ingredients": [],
+          "tools": [
+            "saucepan"
+          ],
+          "safety": "Confirm the burner is fully off."
+        }
+      ]
+    }
+  ]
+}
