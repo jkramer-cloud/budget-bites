@@ -1,0 +1,137 @@
+{
+  "_instructions": "Copy the example objects into kitchen-recipes.json: ingredientCatalog/mealCatalog are ONLY for brand-new meal-planner entries; for an existing meal, just add one entry to recipes with an exact existing id. Update the embedded JSON in index.html for offline single-file use.",
+  "ingredientCatalog_example": {
+    "id": "sample-ingredient",
+    "name": "Sample ingredient",
+    "unit": "cup",
+    "packQty": 4,
+    "price": 3.5,
+    "category": "Produce",
+    "allergens": []
+  },
+  "mealCatalog_example": {
+    "id": "sample-recipe",
+    "name": "Sample Kitchen Recipe",
+    "meal": "Lunch",
+    "emoji": "🥗",
+    "desc": "Example only.",
+    "ingredients": {
+      "sample-ingredient": 2
+    },
+    "nutrition": [
+      250,
+      10,
+      30,
+      5,
+      6,
+      400
+    ],
+    "groups": [
+      "Produce"
+    ],
+    "minutes": 20,
+    "skill": "Beginner",
+    "method": [
+      "Wash hands",
+      "Prepare ingredients",
+      "Cook or assemble",
+      "Serve safely"
+    ]
+  },
+  "recipes_example": {
+    "id": "sample-recipe",
+    "version": 2,
+    "difficulty": "Beginner",
+    "kitchenTitle": "Sample Kitchen Recipe",
+    "intro": "Educational cooking simulation.",
+    "servings": 4,
+    "estimatedMinutes": 20,
+    "ingredientIds": [
+      "sample-ingredient"
+    ],
+    "requiredTools": [
+      "measuring-cup"
+    ],
+    "visualIngredients": [
+      "sample-ingredient"
+    ],
+    "cookingMethod": "fridge",
+    "skills": [
+      "Measurement",
+      "Food safety"
+    ],
+    "allergenNote": "Check actual packages.",
+    "safety": "Simulation only. Real knives, burners, ovens, and microwaves require appropriate adult supervision. Always follow verified recipes and appliance directions.",
+    "steps": [
+      {
+        "id": "handwash",
+        "station": "sink",
+        "action": "sequence",
+        "title": "Wash hands thoroughly",
+        "instruction": "Wash hands thoroughly. Choose the tasks in the correct order.",
+        "sequence": [
+          {
+            "id": "handwash-0",
+            "label": "Apply soap to wet hands",
+            "icon": "🫧"
+          },
+          {
+            "id": "handwash-1",
+            "label": "Scrub for at least 20 seconds (simulated)",
+            "icon": "🫧"
+          },
+          {
+            "id": "handwash-2",
+            "label": "Rinse and dry with clean towel",
+            "icon": "🫧"
+          }
+        ],
+        "ingredients": [],
+        "tools": [],
+        "safety": "Always wash with soap for at least 20 seconds before food preparation. The classroom simulation is accelerated."
+      },
+      {
+        "id": "measure",
+        "station": "pantry",
+        "action": "measure",
+        "title": "Measure ingredients",
+        "instruction": "Add two simulated cups.",
+        "ingredients": [],
+        "tools": [],
+        "safety": "Simulation only. Real knives, burners, ovens, and microwaves require appropriate adult supervision. Always follow verified recipes and appliance directions.",
+        "ingredient": "sample-ingredient",
+        "target": 2,
+        "increment": 0.5,
+        "unit": "cups"
+      },
+      {
+        "id": "plate",
+        "station": "serve",
+        "action": "portion",
+        "title": "Plate portions",
+        "instruction": "Serve four portions.",
+        "ingredients": [],
+        "tools": [],
+        "safety": "Simulation only. Real knives, burners, ovens, and microwaves require appropriate adult supervision. Always follow verified recipes and appliance directions.",
+        "target": 4
+      },
+      {
+        "id": "check",
+        "station": "serve",
+        "action": "quiz",
+        "title": "Refrigerate safely",
+        "instruction": "Choose the correct food-safety answer.",
+        "question": "When should perishable leftovers be refrigerated?",
+        "options": [
+          "Within two hours",
+          "The next day",
+          "Never"
+        ],
+        "correct": 0,
+        "tools": [],
+        "ingredients": [],
+        "safety": "Refrigerate leftovers promptly."
+      }
+    ]
+  }
+}
