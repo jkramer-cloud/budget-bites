@@ -1,22 +1,17 @@
-# Budget Bites v5 — Playable 16-bit Kitchen
+# Budget Bites v6 — Kitchen Recipe Expansion
 
-This release uses the same artwork as the 16-bit concept poster for a playable walkable kitchen and six detailed station scenes. The Banana Cinnamon Oats hands-on recipe has 12 working tasks. All existing Budget Bites planning, grocery, budgeting, allergy and nutrition systems remain.
+GitHub Pages-ready version. Upload every file in this folder to the root of your existing `budget-bites` repository, replacing the old `index.html` and `kitchen-recipes.json`. **Keep `assets/` intact.** No build step.
 
-## Install on GitHub Pages
+## New hands-on content
+- 10 playable kitchen recipes (1 preserved + 9 new) spanning Breakfast, Lunch, Dinner and Snack.
+- Uses the 16-bit walkable kitchen, six interactive station close-ups, and the original shopping / nutrition / budgeting system.
+- Two additional mini-actions: simulated safe-cooking check milestones and plating a family meal.
+- Recipe-specific ingredients, quiz questions, food-safety instructions, and recipe icons.
+- Practice medals and a 10-recipe collection tracker saved locally to the same browser. Practice does not spend money or groceries.
+- Mission cooking works for matching planned recipes with purchased ingredients and obeys household allergen checks.
 
-Upload **all** files and the `assets` folder into your existing Budget Bites repository. Keep `index.html`, `kitchen-recipes.json`, `NEW_RECIPE_TEMPLATE.json` and `assets/` at the root. Enable GitHub Pages from the repository root, or use the existing Pages setting. No build or dependencies required.
+## Important food safety
+This is an **educational simulation**, not a real cooking timer or food thermometer. All measurements in the mini-games are demonstrations and are not substitutes for package directions or household-scaled ingredient quantities. Adult supervision is required for real knives, stoves and hot liquids. Review product labels for allergies and cross-contact.
 
-## Controls
-
-- Click **Kitchen** in the app, then **Try Banana Cinnamon Oats**.
-- Use **WASD** or arrow keys to walk, **E** to open the highlighted station, or click a station to auto-walk.
-- In the close-up, click the green interactive button on the artwork or complete the detailed controls at right.
-- Choose **Back to kitchen** to continue exploring. **Continue to next step** returns to the map automatically if the next step uses a different station.
-- Progress saves in browser localStorage; practice mode does not deduct groceries.
-- Planning a meal and buying its ingredients unlocks the mission mode, which consumes inventory only after a completed recipe.
-
-## Scope and limitations
-
-The six close-up art scenes and animated overlays are functional for the **12-step Banana Cinnamon Oats recipe**. Other recipes retain guided reading and existing recipes can be extended in `kitchen-recipes.json`. This is a detailed art-led prototype, not a sprite-by-sprite engine with distinct animated assets for all other recipes. The animation is illustrative rather than physics-based, and the concept artwork is included as image assets.
-
-Visual assets are based on the generated Budget Bites 16-bit concept art supplied in this conversation.
+## Data files
+`kitchen-recipes.json` is the editable source catalog; its complete contents are also embedded in `index.html` for offline/local file viewing. Keep these in sync when adding more recipes. Original 68 meal-planner recipes and all artwork remain.

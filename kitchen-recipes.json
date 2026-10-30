@@ -393,6 +393,2160 @@
           "safety": "Refrigerate perishable leftovers promptly, generally within 2 hours. Use shallow containers to cool them faster."
         }
       ]
+    },
+    {
+      "id": "berry-yogurt",
+      "version": 2,
+      "difficulty": "Beginner",
+      "kitchenTitle": "Berry Yogurt Bowls",
+      "intro": "A cold breakfast that practices washing berries, measuring dairy and grains, layering, and plating.",
+      "servings": 4,
+      "estimatedMinutes": 8,
+      "ingredientIds": [
+        "berries",
+        "yogurt",
+        "oats"
+      ],
+      "requiredTools": [
+        "serving-bowl",
+        "spoon",
+        "measuring-cup"
+      ],
+      "skills": [
+        "Food hygiene",
+        "No-cook measuring",
+        "Layering",
+        "Portion sizes"
+      ],
+      "allergenNote": "Yogurt contains milk; confirm packaging and cross-contact.",
+      "safety": "Keep yogurt cold; wash produce; never leave perishable dairy unrefrigerated for long.",
+      "steps": [
+        {
+          "id": "wash-hands",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Wash hands and ready the station",
+          "instruction": "Wash hands and ready the station. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "wash-hands-0",
+              "label": "Apply soap",
+              "icon": "🧼"
+            },
+            {
+              "id": "wash-hands-1",
+              "label": "Scrub for 20 seconds (simulated)",
+              "icon": "🫧"
+            },
+            {
+              "id": "wash-hands-2",
+              "label": "Rinse and dry",
+              "icon": "🚰"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "In a real kitchen wash hands with soap for at least 20 seconds. The simulation uses short clicks."
+        },
+        {
+          "id": "gather-tools",
+          "station": "pantry",
+          "action": "collect",
+          "title": "Set up your cooking station",
+          "instruction": "Choose only the tools needed for this recipe. Distractor tools cost a retry.",
+          "required": [
+            "serving-bowl",
+            "spoon",
+            "measuring-cup"
+          ],
+          "choices": [
+            "whisk",
+            "grater",
+            "serving-bowl",
+            "spoon",
+            "measuring-cup"
+          ],
+          "tools": [
+            "serving-bowl",
+            "spoon",
+            "measuring-cup"
+          ],
+          "ingredients": [],
+          "safety": "Keep clean equipment ready before you start. Use a stable board and adult help with sharp or hot tools."
+        },
+        {
+          "id": "rinse-berries",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Rinse produce",
+          "instruction": "Rinse produce. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "rinse-berries-0",
+              "label": "Use clean running water",
+              "icon": "🚰"
+            },
+            {
+              "id": "rinse-berries-1",
+              "label": "Rinse berries",
+              "icon": "🥬"
+            },
+            {
+              "id": "rinse-berries-2",
+              "label": "Turn the tap off",
+              "icon": "💧"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "Rinse fresh produce with running water, not soap. Handle clean foods on a sanitized surface."
+        },
+        {
+          "id": "measure-yogurt",
+          "station": "counter",
+          "action": "measure",
+          "title": "Measure yogurt",
+          "instruction": "Add 0.5 cups per tap until the simulated demo reaches 2 cups.",
+          "ingredient": "yogurt",
+          "target": 2,
+          "increment": 0.5,
+          "unit": "cups",
+          "tools": [
+            "measuring-cup"
+          ],
+          "ingredients": [
+            "yogurt"
+          ],
+          "safety": "Measurements are a classroom demonstration. Actual recipe quantities depend on the household portions and package directions."
+        },
+        {
+          "id": "measure-oats",
+          "station": "pantry",
+          "action": "measure",
+          "title": "Measure oats",
+          "instruction": "Add 0.5 cups per tap until the simulated demo reaches 1 cups.",
+          "ingredient": "oats",
+          "target": 1,
+          "increment": 0.5,
+          "unit": "cups",
+          "tools": [
+            "measuring-cup"
+          ],
+          "ingredients": [
+            "oats"
+          ],
+          "safety": "Measurements are a classroom demonstration. Actual recipe quantities depend on the household portions and package directions."
+        },
+        {
+          "id": "layer",
+          "station": "counter",
+          "action": "combine",
+          "title": "Combine your ingredients",
+          "instruction": "Add and mix the items in the correct order.",
+          "sequence": [
+            {
+              "id": "layer-0",
+              "label": "Spoon yogurt into clean bowls",
+              "icon": "🥣"
+            },
+            {
+              "id": "layer-1",
+              "label": "Add washed berries",
+              "icon": "🫐"
+            },
+            {
+              "id": "layer-2",
+              "label": "Sprinkle oats on top",
+              "icon": "🌾"
+            }
+          ],
+          "ingredients": [
+            "berries",
+            "yogurt",
+            "oats"
+          ],
+          "tools": [
+            "serving-bowl",
+            "spoon"
+          ],
+          "safety": "Use clean utensils and keep food on sanitary surfaces."
+        },
+        {
+          "id": "plate-portions",
+          "station": "serve",
+          "action": "portion",
+          "title": "Portion the meal",
+          "instruction": "Serve 4 simulated portions. Think about fair portions and family needs.",
+          "target": 4,
+          "tools": [
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Use clean serving utensils. Refrigerate perishable leftovers promptly and follow food-safety guidance."
+        },
+        {
+          "id": "food-safety-check",
+          "station": "serve",
+          "action": "quiz",
+          "title": "Food safety checkpoint",
+          "instruction": "Choose the safest answer before finishing.",
+          "question": "What should happen to the yogurt before and after serving?",
+          "options": [
+            "Leave it on the counter all afternoon",
+            "Keep it refrigerated and return leftovers promptly",
+            "Wash the yogurt with soap"
+          ],
+          "correct": 1,
+          "tools": [],
+          "ingredients": [],
+          "safety": "Use the food-safety instruction to choose the safest answer."
+        }
+      ]
+    },
+    {
+      "id": "egg-toast",
+      "version": 2,
+      "difficulty": "Intermediate",
+      "kitchenTitle": "Egg & Toast Plate",
+      "intro": "Make a warm egg plate with fruit and toast, with a simulated cooking sequence and cross-contamination checks.",
+      "servings": 4,
+      "estimatedMinutes": 20,
+      "ingredientIds": [
+        "egg",
+        "bread",
+        "orange",
+        "oil"
+      ],
+      "requiredTools": [
+        "cutting-board",
+        "knife",
+        "saucepan",
+        "spoon",
+        "serving-bowl"
+      ],
+      "skills": [
+        "Egg safety",
+        "Produce washing",
+        "Heating",
+        "Safe cutting"
+      ],
+      "allergenNote": "Contains eggs and wheat; check bread labels.",
+      "safety": "Adults supervise real heating and knives. Cook eggs thoroughly, with firm whites and yolks.",
+      "steps": [
+        {
+          "id": "wash-hands",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Wash hands and ready the station",
+          "instruction": "Wash hands and ready the station. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "wash-hands-0",
+              "label": "Apply soap",
+              "icon": "🧼"
+            },
+            {
+              "id": "wash-hands-1",
+              "label": "Scrub for 20 seconds (simulated)",
+              "icon": "🫧"
+            },
+            {
+              "id": "wash-hands-2",
+              "label": "Rinse and dry",
+              "icon": "🚰"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "In a real kitchen wash hands with soap for at least 20 seconds. The simulation uses short clicks."
+        },
+        {
+          "id": "gather-tools",
+          "station": "pantry",
+          "action": "collect",
+          "title": "Set up your cooking station",
+          "instruction": "Choose only the tools needed for this recipe. Distractor tools cost a retry.",
+          "required": [
+            "cutting-board",
+            "knife",
+            "saucepan",
+            "spoon",
+            "serving-bowl"
+          ],
+          "choices": [
+            "whisk",
+            "grater",
+            "cutting-board",
+            "knife",
+            "saucepan",
+            "spoon",
+            "serving-bowl"
+          ],
+          "tools": [
+            "cutting-board",
+            "knife",
+            "saucepan",
+            "spoon",
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Keep clean equipment ready before you start. Use a stable board and adult help with sharp or hot tools."
+        },
+        {
+          "id": "wash-oranges",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Rinse produce",
+          "instruction": "Rinse produce. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "wash-oranges-0",
+              "label": "Use clean running water",
+              "icon": "🚰"
+            },
+            {
+              "id": "wash-oranges-1",
+              "label": "Rinse oranges",
+              "icon": "🥬"
+            },
+            {
+              "id": "wash-oranges-2",
+              "label": "Turn the tap off",
+              "icon": "💧"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "Rinse fresh produce with running water, not soap. Handle clean foods on a sanitized surface."
+        },
+        {
+          "id": "slice-oranges",
+          "station": "prep",
+          "action": "chop",
+          "title": "Prepare orange",
+          "ingredient": "orange",
+          "target": 4,
+          "instruction": "Make 4 simulated careful cuts of orange. Follow the safe cutting routine.",
+          "tools": [
+            "cutting-board",
+            "knife"
+          ],
+          "ingredients": [
+            "orange"
+          ],
+          "safety": "Real knives require appropriate adult supervision. Use a stable board, tuck fingertips, and keep the blade pointed away from hands."
+        },
+        {
+          "id": "prep-egg",
+          "station": "counter",
+          "action": "combine",
+          "title": "Combine your ingredients",
+          "instruction": "Add and mix the items in the correct order.",
+          "sequence": [
+            {
+              "id": "prep-egg-0",
+              "label": "Crack eggs into clean bowl",
+              "icon": "🥚"
+            },
+            {
+              "id": "prep-egg-1",
+              "label": "Keep raw egg away from ready-to-eat fruit",
+              "icon": "🧼"
+            },
+            {
+              "id": "prep-egg-2",
+              "label": "Prepare toast with adult help",
+              "icon": "🍞"
+            }
+          ],
+          "ingredients": [
+            "egg",
+            "bread"
+          ],
+          "tools": [
+            "serving-bowl",
+            "spoon"
+          ],
+          "safety": "Wash hands and utensils after contact with raw eggs; avoid cross-contamination."
+        },
+        {
+          "id": "heat-on",
+          "station": "stove",
+          "action": "heat",
+          "state": "on",
+          "title": "Turn the burner to low",
+          "instruction": "Choose LOW to begin the simulated stovetop step.",
+          "ingredients": [],
+          "tools": [
+            "saucepan"
+          ],
+          "safety": "Real stovetops and hot pans require adult supervision; keep handles inward and never leave cooking unattended."
+        },
+        {
+          "id": "stir-4",
+          "station": "stove",
+          "action": "stir",
+          "title": "Cook and stir eggs carefully",
+          "instruction": "Make 4 careful simulated stirs. Avoid splashing or touching hot equipment.",
+          "target": 4,
+          "tools": [
+            "spoon"
+          ],
+          "ingredients": [
+            "egg"
+          ],
+          "safety": "Stir carefully. Steam and hot pans can burn; adults supervise real cooking."
+        },
+        {
+          "id": "check-3",
+          "station": "stove",
+          "action": "timer",
+          "title": "Check that eggs are cooked through",
+          "instruction": "Advance three simulated cooking checkpoints. In real cooking, eggs should have firm whites and yolks; follow appropriate temperature guidance.",
+          "target": 3,
+          "unit": "checkpoints",
+          "tools": [],
+          "ingredients": [],
+          "safety": "The simulation does not verify safe food temperature or actual cooking time. Follow a validated recipe, appliance and package directions with adult supervision."
+        },
+        {
+          "id": "heat-off",
+          "station": "stove",
+          "action": "heat",
+          "state": "off",
+          "title": "Shut off the burner",
+          "instruction": "Switch the burner fully OFF before serving.",
+          "ingredients": [],
+          "tools": [
+            "saucepan"
+          ],
+          "safety": "Real stovetops and hot pans require adult supervision; keep handles inward and never leave cooking unattended."
+        },
+        {
+          "id": "plate-portions",
+          "station": "serve",
+          "action": "portion",
+          "title": "Portion the meal",
+          "instruction": "Serve 4 simulated portions. Think about fair portions and family needs.",
+          "target": 4,
+          "tools": [
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Use clean serving utensils. Refrigerate perishable leftovers promptly and follow food-safety guidance."
+        },
+        {
+          "id": "food-safety-check",
+          "station": "serve",
+          "action": "quiz",
+          "title": "Food safety checkpoint",
+          "instruction": "Choose the safest answer before finishing.",
+          "question": "How should eggs be cooked before serving?",
+          "options": [
+            "Whites and yolks should be firm",
+            "The center can be fully raw",
+            "Cooking does not matter if the pan is hot"
+          ],
+          "correct": 0,
+          "tools": [],
+          "ingredients": [],
+          "safety": "Cook eggs until yolks and whites are firm; follow food-safety guidance."
+        }
+      ]
+    },
+    {
+      "id": "pb-banana",
+      "version": 2,
+      "difficulty": "Beginner",
+      "kitchenTitle": "Peanut Butter Banana Toast",
+      "intro": "A no-stove recipe focused on safe cutting, allergen awareness, and equal portions.",
+      "servings": 4,
+      "estimatedMinutes": 10,
+      "ingredientIds": [
+        "pb",
+        "bread",
+        "banana"
+      ],
+      "requiredTools": [
+        "cutting-board",
+        "knife",
+        "spoon",
+        "serving-bowl"
+      ],
+      "skills": [
+        "Allergy awareness",
+        "Safe slicing",
+        "Assembly",
+        "Portion sizes"
+      ],
+      "allergenNote": "Contains peanuts and wheat; use a different recipe for anyone with these allergies.",
+      "safety": "Never serve peanuts where there is a known peanut allergy. Review the full household allergy list.",
+      "steps": [
+        {
+          "id": "wash-hands",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Wash hands and ready the station",
+          "instruction": "Wash hands and ready the station. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "wash-hands-0",
+              "label": "Apply soap",
+              "icon": "🧼"
+            },
+            {
+              "id": "wash-hands-1",
+              "label": "Scrub for 20 seconds (simulated)",
+              "icon": "🫧"
+            },
+            {
+              "id": "wash-hands-2",
+              "label": "Rinse and dry",
+              "icon": "🚰"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "In a real kitchen wash hands with soap for at least 20 seconds. The simulation uses short clicks."
+        },
+        {
+          "id": "gather-tools",
+          "station": "pantry",
+          "action": "collect",
+          "title": "Set up your cooking station",
+          "instruction": "Choose only the tools needed for this recipe. Distractor tools cost a retry.",
+          "required": [
+            "cutting-board",
+            "knife",
+            "spoon",
+            "serving-bowl"
+          ],
+          "choices": [
+            "whisk",
+            "grater",
+            "cutting-board",
+            "knife",
+            "spoon",
+            "serving-bowl"
+          ],
+          "tools": [
+            "cutting-board",
+            "knife",
+            "spoon",
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Keep clean equipment ready before you start. Use a stable board and adult help with sharp or hot tools."
+        },
+        {
+          "id": "wash-banana",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Rinse produce",
+          "instruction": "Rinse produce. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "wash-banana-0",
+              "label": "Use clean running water",
+              "icon": "🚰"
+            },
+            {
+              "id": "wash-banana-1",
+              "label": "Rinse banana peel",
+              "icon": "🥬"
+            },
+            {
+              "id": "wash-banana-2",
+              "label": "Turn the tap off",
+              "icon": "💧"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "Rinse fresh produce with running water, not soap. Handle clean foods on a sanitized surface."
+        },
+        {
+          "id": "slice-banana",
+          "station": "prep",
+          "action": "chop",
+          "title": "Prepare banana",
+          "ingredient": "banana",
+          "target": 5,
+          "instruction": "Make 5 simulated careful cuts of banana. Follow the safe cutting routine.",
+          "tools": [
+            "cutting-board",
+            "knife"
+          ],
+          "ingredients": [
+            "banana"
+          ],
+          "safety": "Real knives require appropriate adult supervision. Use a stable board, tuck fingertips, and keep the blade pointed away from hands."
+        },
+        {
+          "id": "assemble-toast",
+          "station": "counter",
+          "action": "combine",
+          "title": "Combine your ingredients",
+          "instruction": "Add and mix the items in the correct order.",
+          "sequence": [
+            {
+              "id": "assemble-toast-0",
+              "label": "Check labels for peanuts and wheat",
+              "icon": "🔎"
+            },
+            {
+              "id": "assemble-toast-1",
+              "label": "Spread peanut butter on bread",
+              "icon": "🥜"
+            },
+            {
+              "id": "assemble-toast-2",
+              "label": "Add banana slices",
+              "icon": "🍌"
+            },
+            {
+              "id": "assemble-toast-3",
+              "label": "Cut or arrange equal portions",
+              "icon": "🍞"
+            }
+          ],
+          "ingredients": [
+            "pb",
+            "bread",
+            "banana"
+          ],
+          "tools": [
+            "serving-bowl",
+            "spoon"
+          ],
+          "safety": "Use clean utensils and keep food on sanitary surfaces."
+        },
+        {
+          "id": "plate-portions",
+          "station": "serve",
+          "action": "portion",
+          "title": "Portion the meal",
+          "instruction": "Serve 4 simulated portions. Think about fair portions and family needs.",
+          "target": 4,
+          "tools": [
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Use clean serving utensils. Refrigerate perishable leftovers promptly and follow food-safety guidance."
+        },
+        {
+          "id": "food-safety-check",
+          "station": "serve",
+          "action": "quiz",
+          "title": "Food safety checkpoint",
+          "instruction": "Choose the safest answer before finishing.",
+          "question": "Someone in the household has a peanut allergy. What is safest?",
+          "options": [
+            "Use peanut butter anyway",
+            "Choose a recipe without peanuts and check labels",
+            "Use only a tiny amount"
+          ],
+          "correct": 1,
+          "tools": [],
+          "ingredients": [],
+          "safety": "Use the food-safety instruction to choose the safest answer."
+        }
+      ]
+    },
+    {
+      "id": "quesadilla",
+      "version": 2,
+      "difficulty": "Intermediate",
+      "kitchenTitle": "Bean & Cheese Quesadillas",
+      "intro": "Prepare and cook a folded bean-and-cheese tortilla using safe stovetop procedures.",
+      "servings": 4,
+      "estimatedMinutes": 18,
+      "ingredientIds": [
+        "beans",
+        "cheese",
+        "tortilla",
+        "salsa",
+        "spinach"
+      ],
+      "requiredTools": [
+        "saucepan",
+        "spoon",
+        "cutting-board",
+        "serving-bowl"
+      ],
+      "skills": [
+        "Assembly",
+        "Stovetop supervision",
+        "Food safety",
+        "Portioning"
+      ],
+      "allergenNote": "Contains milk; check tortilla and product labels for other allergens.",
+      "safety": "Real pans and melted cheese are hot. Heat food thoroughly with adult supervision.",
+      "steps": [
+        {
+          "id": "wash-hands",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Wash hands and ready the station",
+          "instruction": "Wash hands and ready the station. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "wash-hands-0",
+              "label": "Apply soap",
+              "icon": "🧼"
+            },
+            {
+              "id": "wash-hands-1",
+              "label": "Scrub for 20 seconds (simulated)",
+              "icon": "🫧"
+            },
+            {
+              "id": "wash-hands-2",
+              "label": "Rinse and dry",
+              "icon": "🚰"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "In a real kitchen wash hands with soap for at least 20 seconds. The simulation uses short clicks."
+        },
+        {
+          "id": "gather-tools",
+          "station": "pantry",
+          "action": "collect",
+          "title": "Set up your cooking station",
+          "instruction": "Choose only the tools needed for this recipe. Distractor tools cost a retry.",
+          "required": [
+            "saucepan",
+            "spoon",
+            "cutting-board",
+            "serving-bowl"
+          ],
+          "choices": [
+            "whisk",
+            "grater",
+            "saucepan",
+            "spoon",
+            "cutting-board",
+            "serving-bowl"
+          ],
+          "tools": [
+            "saucepan",
+            "spoon",
+            "cutting-board",
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Keep clean equipment ready before you start. Use a stable board and adult help with sharp or hot tools."
+        },
+        {
+          "id": "measure-beans",
+          "station": "pantry",
+          "action": "measure",
+          "title": "Measure beans",
+          "instruction": "Add 0.5 cups per tap until the simulated demo reaches 2 cups.",
+          "ingredient": "beans",
+          "target": 2,
+          "increment": 0.5,
+          "unit": "cups",
+          "tools": [
+            "measuring-cup"
+          ],
+          "ingredients": [
+            "beans"
+          ],
+          "safety": "Measurements are a classroom demonstration. Actual recipe quantities depend on the household portions and package directions."
+        },
+        {
+          "id": "assemble",
+          "station": "counter",
+          "action": "combine",
+          "title": "Combine your ingredients",
+          "instruction": "Add and mix the items in the correct order.",
+          "sequence": [
+            {
+              "id": "assemble-0",
+              "label": "Place tortilla on a clean plate",
+              "icon": "🫓"
+            },
+            {
+              "id": "assemble-1",
+              "label": "Add measured beans",
+              "icon": "🫘"
+            },
+            {
+              "id": "assemble-2",
+              "label": "Sprinkle cheese",
+              "icon": "🧀"
+            },
+            {
+              "id": "assemble-3",
+              "label": "Fold tortilla in half",
+              "icon": "🌮"
+            }
+          ],
+          "ingredients": [
+            "beans",
+            "cheese",
+            "tortilla",
+            "salsa",
+            "spinach"
+          ],
+          "tools": [
+            "serving-bowl",
+            "spoon"
+          ],
+          "safety": "Use clean utensils and keep food on sanitary surfaces."
+        },
+        {
+          "id": "heat-on",
+          "station": "stove",
+          "action": "heat",
+          "state": "on",
+          "title": "Turn the burner to low",
+          "instruction": "Choose LOW to begin the simulated stovetop step.",
+          "ingredients": [],
+          "tools": [
+            "saucepan"
+          ],
+          "safety": "Real stovetops and hot pans require adult supervision; keep handles inward and never leave cooking unattended."
+        },
+        {
+          "id": "check-3",
+          "station": "stove",
+          "action": "timer",
+          "title": "Heat and check quesadillas",
+          "instruction": "Practice three simulated heating checks with adult supervision. Actual times depend on equipment and food temperature.",
+          "target": 3,
+          "unit": "checkpoints",
+          "tools": [],
+          "ingredients": [],
+          "safety": "The simulation does not verify safe food temperature or actual cooking time. Follow a validated recipe, appliance and package directions with adult supervision."
+        },
+        {
+          "id": "turn-quesadilla",
+          "station": "stove",
+          "action": "sequence",
+          "title": "Turn carefully and finish heating",
+          "instruction": "Turn carefully and finish heating. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "turn-quesadilla-0",
+              "label": "Use a spatula to turn away from your body",
+              "icon": "🍳"
+            },
+            {
+              "id": "turn-quesadilla-1",
+              "label": "Check that the filling is thoroughly heated",
+              "icon": "♨️"
+            }
+          ],
+          "tools": [],
+          "ingredients": [
+            "beans",
+            "cheese"
+          ],
+          "safety": "Only an adult should handle a hot skillet. Use a utensil and avoid hot steam."
+        },
+        {
+          "id": "heat-off",
+          "station": "stove",
+          "action": "heat",
+          "state": "off",
+          "title": "Shut off the burner",
+          "instruction": "Switch the burner fully OFF before serving.",
+          "ingredients": [],
+          "tools": [
+            "saucepan"
+          ],
+          "safety": "Real stovetops and hot pans require adult supervision; keep handles inward and never leave cooking unattended."
+        },
+        {
+          "id": "plate-portions",
+          "station": "serve",
+          "action": "portion",
+          "title": "Portion the meal",
+          "instruction": "Serve 4 simulated portions. Think about fair portions and family needs.",
+          "target": 4,
+          "tools": [
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Use clean serving utensils. Refrigerate perishable leftovers promptly and follow food-safety guidance."
+        },
+        {
+          "id": "food-safety-check",
+          "station": "serve",
+          "action": "quiz",
+          "title": "Food safety checkpoint",
+          "instruction": "Choose the safest answer before finishing.",
+          "question": "What is the safe next step before serving from a skillet?",
+          "options": [
+            "Turn the burner OFF",
+            "Leave heat on until tomorrow",
+            "Touch the pan surface to check"
+          ],
+          "correct": 0,
+          "tools": [],
+          "ingredients": [],
+          "safety": "Use the food-safety instruction to choose the safest answer."
+        }
+      ]
+    },
+    {
+      "id": "hummus-box",
+      "version": 2,
+      "difficulty": "Beginner",
+      "kitchenTitle": "Hummus Snack-Plate Lunch",
+      "intro": "A no-cook lunch emphasizing vegetables, healthy variety, and clean serving practices.",
+      "servings": 4,
+      "estimatedMinutes": 12,
+      "ingredientIds": [
+        "hummus",
+        "carrot",
+        "cucumber",
+        "apple",
+        "bread"
+      ],
+      "requiredTools": [
+        "cutting-board",
+        "knife",
+        "serving-bowl",
+        "spoon"
+      ],
+      "skills": [
+        "Produce washing",
+        "Food safety",
+        "Balanced meals",
+        "Plating"
+      ],
+      "allergenNote": "Hummus may contain sesame; bread contains wheat. Check labels.",
+      "safety": "Keep ready-to-eat items separate from raw meat; wash produce and use clean equipment.",
+      "steps": [
+        {
+          "id": "wash-hands",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Wash hands and ready the station",
+          "instruction": "Wash hands and ready the station. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "wash-hands-0",
+              "label": "Apply soap",
+              "icon": "🧼"
+            },
+            {
+              "id": "wash-hands-1",
+              "label": "Scrub for 20 seconds (simulated)",
+              "icon": "🫧"
+            },
+            {
+              "id": "wash-hands-2",
+              "label": "Rinse and dry",
+              "icon": "🚰"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "In a real kitchen wash hands with soap for at least 20 seconds. The simulation uses short clicks."
+        },
+        {
+          "id": "gather-tools",
+          "station": "pantry",
+          "action": "collect",
+          "title": "Set up your cooking station",
+          "instruction": "Choose only the tools needed for this recipe. Distractor tools cost a retry.",
+          "required": [
+            "cutting-board",
+            "knife",
+            "serving-bowl",
+            "spoon"
+          ],
+          "choices": [
+            "whisk",
+            "grater",
+            "cutting-board",
+            "knife",
+            "serving-bowl",
+            "spoon"
+          ],
+          "tools": [
+            "cutting-board",
+            "knife",
+            "serving-bowl",
+            "spoon"
+          ],
+          "ingredients": [],
+          "safety": "Keep clean equipment ready before you start. Use a stable board and adult help with sharp or hot tools."
+        },
+        {
+          "id": "wash-veggies",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Rinse produce",
+          "instruction": "Rinse produce. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "wash-veggies-0",
+              "label": "Use clean running water",
+              "icon": "🚰"
+            },
+            {
+              "id": "wash-veggies-1",
+              "label": "Rinse carrots, cucumbers, and apples",
+              "icon": "🥬"
+            },
+            {
+              "id": "wash-veggies-2",
+              "label": "Turn the tap off",
+              "icon": "💧"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "Rinse fresh produce with running water, not soap. Handle clean foods on a sanitized surface."
+        },
+        {
+          "id": "slice-cucumber",
+          "station": "prep",
+          "action": "chop",
+          "title": "Prepare cucumber",
+          "ingredient": "cucumber",
+          "target": 5,
+          "instruction": "Make 5 simulated careful cuts of cucumber. Follow the safe cutting routine.",
+          "tools": [
+            "cutting-board",
+            "knife"
+          ],
+          "ingredients": [
+            "cucumber"
+          ],
+          "safety": "Real knives require appropriate adult supervision. Use a stable board, tuck fingertips, and keep the blade pointed away from hands."
+        },
+        {
+          "id": "arrange-dippers",
+          "station": "counter",
+          "action": "combine",
+          "title": "Combine your ingredients",
+          "instruction": "Add and mix the items in the correct order.",
+          "sequence": [
+            {
+              "id": "arrange-dippers-0",
+              "label": "Add hummus to a clean bowl",
+              "icon": "🥣"
+            },
+            {
+              "id": "arrange-dippers-1",
+              "label": "Arrange cucumber slices",
+              "icon": "🥒"
+            },
+            {
+              "id": "arrange-dippers-2",
+              "label": "Add washed carrot sticks",
+              "icon": "🥕"
+            },
+            {
+              "id": "arrange-dippers-3",
+              "label": "Add bread on the side",
+              "icon": "🍞"
+            }
+          ],
+          "ingredients": [
+            "hummus",
+            "carrot",
+            "cucumber",
+            "apple",
+            "bread"
+          ],
+          "tools": [
+            "serving-bowl",
+            "spoon"
+          ],
+          "safety": "Use clean utensils and keep food on sanitary surfaces."
+        },
+        {
+          "id": "plate-portions",
+          "station": "serve",
+          "action": "portion",
+          "title": "Portion the meal",
+          "instruction": "Serve 4 simulated portions. Think about fair portions and family needs.",
+          "target": 4,
+          "tools": [
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Use clean serving utensils. Refrigerate perishable leftovers promptly and follow food-safety guidance."
+        },
+        {
+          "id": "food-safety-check",
+          "station": "serve",
+          "action": "quiz",
+          "title": "Food safety checkpoint",
+          "instruction": "Choose the safest answer before finishing.",
+          "question": "Should you wash fresh vegetables with soap before preparing this plate?",
+          "options": [
+            "Yes, always use dish detergent",
+            "No, rinse with clean running water",
+            "No washing is needed"
+          ],
+          "correct": 1,
+          "tools": [],
+          "ingredients": [],
+          "safety": "Use the food-safety instruction to choose the safest answer."
+        }
+      ]
+    },
+    {
+      "id": "pasta-salad",
+      "version": 2,
+      "difficulty": "Intermediate",
+      "kitchenTitle": "Garden Pasta Salad",
+      "intro": "Cook and cool pasta, then assemble a simple vegetable pasta salad.",
+      "servings": 4,
+      "estimatedMinutes": 25,
+      "ingredientIds": [
+        "pasta",
+        "cucumber",
+        "pepper",
+        "spinach",
+        "chickpea",
+        "oil"
+      ],
+      "requiredTools": [
+        "saucepan",
+        "spoon",
+        "cutting-board",
+        "knife",
+        "serving-bowl"
+      ],
+      "skills": [
+        "Boiling-water safety",
+        "Chopping",
+        "Measuring",
+        "Cooling"
+      ],
+      "allergenNote": "Contains wheat. Check dressing and pasta packages.",
+      "safety": "Adult supervision is required for boiling water, draining and knives. Follow package directions and refrigerate perishable leftovers promptly.",
+      "steps": [
+        {
+          "id": "wash-hands",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Wash hands and ready the station",
+          "instruction": "Wash hands and ready the station. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "wash-hands-0",
+              "label": "Apply soap",
+              "icon": "🧼"
+            },
+            {
+              "id": "wash-hands-1",
+              "label": "Scrub for 20 seconds (simulated)",
+              "icon": "🫧"
+            },
+            {
+              "id": "wash-hands-2",
+              "label": "Rinse and dry",
+              "icon": "🚰"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "In a real kitchen wash hands with soap for at least 20 seconds. The simulation uses short clicks."
+        },
+        {
+          "id": "gather-tools",
+          "station": "pantry",
+          "action": "collect",
+          "title": "Set up your cooking station",
+          "instruction": "Choose only the tools needed for this recipe. Distractor tools cost a retry.",
+          "required": [
+            "saucepan",
+            "spoon",
+            "cutting-board",
+            "knife",
+            "serving-bowl"
+          ],
+          "choices": [
+            "whisk",
+            "grater",
+            "saucepan",
+            "spoon",
+            "cutting-board",
+            "knife",
+            "serving-bowl"
+          ],
+          "tools": [
+            "saucepan",
+            "spoon",
+            "cutting-board",
+            "knife",
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Keep clean equipment ready before you start. Use a stable board and adult help with sharp or hot tools."
+        },
+        {
+          "id": "wash-garden",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Rinse produce",
+          "instruction": "Rinse produce. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "wash-garden-0",
+              "label": "Use clean running water",
+              "icon": "🚰"
+            },
+            {
+              "id": "wash-garden-1",
+              "label": "Rinse cucumbers, pepper, and spinach",
+              "icon": "🥬"
+            },
+            {
+              "id": "wash-garden-2",
+              "label": "Turn the tap off",
+              "icon": "💧"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "Rinse fresh produce with running water, not soap. Handle clean foods on a sanitized surface."
+        },
+        {
+          "id": "chop-veggies",
+          "station": "prep",
+          "action": "chop",
+          "title": "Prepare pepper",
+          "ingredient": "pepper",
+          "target": 5,
+          "instruction": "Make 5 simulated careful cuts of pepper. Follow the safe cutting routine.",
+          "tools": [
+            "cutting-board",
+            "knife"
+          ],
+          "ingredients": [
+            "pepper"
+          ],
+          "safety": "Real knives require appropriate adult supervision. Use a stable board, tuck fingertips, and keep the blade pointed away from hands."
+        },
+        {
+          "id": "measure-pasta",
+          "station": "pantry",
+          "action": "measure",
+          "title": "Measure pasta for the demonstration",
+          "instruction": "Add 0.5 cups dry per tap until the simulated demo reaches 2 cups dry.",
+          "ingredient": "pasta",
+          "target": 2,
+          "increment": 0.5,
+          "unit": "cups dry",
+          "tools": [
+            "measuring-cup"
+          ],
+          "ingredients": [
+            "pasta"
+          ],
+          "safety": "Measurements are a classroom demonstration. Actual recipe quantities depend on the household portions and package directions."
+        },
+        {
+          "id": "heat-on",
+          "station": "stove",
+          "action": "heat",
+          "state": "on",
+          "title": "Heat water for pasta safely",
+          "instruction": "Choose LOW to begin the simulated stovetop step.",
+          "ingredients": [],
+          "tools": [
+            "saucepan"
+          ],
+          "safety": "Real stovetops and hot pans require adult supervision; keep handles inward and never leave cooking unattended."
+        },
+        {
+          "id": "check-4",
+          "station": "stove",
+          "action": "timer",
+          "title": "Simulated pasta-cooking checks",
+          "instruction": "Work through four simulated checkpoints. Actual pasta cooking time comes from the package. Adult supervision is essential.",
+          "target": 4,
+          "unit": "checkpoints",
+          "tools": [],
+          "ingredients": [],
+          "safety": "The simulation does not verify safe food temperature or actual cooking time. Follow a validated recipe, appliance and package directions with adult supervision."
+        },
+        {
+          "id": "drain-pasta",
+          "station": "stove",
+          "action": "sequence",
+          "title": "Drain and cool pasta safely",
+          "instruction": "Drain and cool pasta safely. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "drain-pasta-0",
+              "label": "Switch off the burner before handling the pot",
+              "icon": "⏻"
+            },
+            {
+              "id": "drain-pasta-1",
+              "label": "Ask an adult to drain away from the body",
+              "icon": "🧤"
+            },
+            {
+              "id": "drain-pasta-2",
+              "label": "Cool pasta as directed before assembling",
+              "icon": "💨"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "Boiling water and steam can cause burns. An adult must handle draining."
+        },
+        {
+          "id": "heat-off",
+          "station": "stove",
+          "action": "heat",
+          "state": "off",
+          "title": "Shut off the burner",
+          "instruction": "Switch the burner fully OFF before serving.",
+          "ingredients": [],
+          "tools": [
+            "saucepan"
+          ],
+          "safety": "Real stovetops and hot pans require adult supervision; keep handles inward and never leave cooking unattended."
+        },
+        {
+          "id": "toss-salad",
+          "station": "counter",
+          "action": "combine",
+          "title": "Combine your ingredients",
+          "instruction": "Add and mix the items in the correct order.",
+          "sequence": [
+            {
+              "id": "toss-salad-0",
+              "label": "Add cooled cooked pasta",
+              "icon": "🍝"
+            },
+            {
+              "id": "toss-salad-1",
+              "label": "Add washed vegetables",
+              "icon": "🥒"
+            },
+            {
+              "id": "toss-salad-2",
+              "label": "Mix with a small amount of oil",
+              "icon": "🫒"
+            }
+          ],
+          "ingredients": [
+            "pasta",
+            "cucumber",
+            "pepper",
+            "spinach",
+            "chickpea",
+            "oil"
+          ],
+          "tools": [
+            "serving-bowl",
+            "spoon"
+          ],
+          "safety": "Use clean utensils and keep food on sanitary surfaces."
+        },
+        {
+          "id": "plate-portions",
+          "station": "serve",
+          "action": "portion",
+          "title": "Portion the meal",
+          "instruction": "Serve 4 simulated portions. Think about fair portions and family needs.",
+          "target": 4,
+          "tools": [
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Use clean serving utensils. Refrigerate perishable leftovers promptly and follow food-safety guidance."
+        },
+        {
+          "id": "food-safety-check",
+          "station": "serve",
+          "action": "quiz",
+          "title": "Food safety checkpoint",
+          "instruction": "Choose the safest answer before finishing.",
+          "question": "Who should drain a pot of boiling pasta?",
+          "options": [
+            "A student without supervision",
+            "An adult or appropriately supervised cook using heat protection",
+            "Anyone holding the pot with bare hands"
+          ],
+          "correct": 1,
+          "tools": [],
+          "ingredients": [],
+          "safety": "Use the food-safety instruction to choose the safest answer."
+        }
+      ]
+    },
+    {
+      "id": "lentil-chili",
+      "version": 2,
+      "difficulty": "Intermediate",
+      "kitchenTitle": "Three-Veg Lentil Chili",
+      "intro": "Make a vegetable-and-lentil chili while practicing measurement, simmer safety, and leftover storage.",
+      "servings": 4,
+      "estimatedMinutes": 30,
+      "ingredientIds": [
+        "lentil",
+        "beans",
+        "tomato",
+        "onion",
+        "carrot",
+        "pepper"
+      ],
+      "requiredTools": [
+        "saucepan",
+        "spoon",
+        "cutting-board",
+        "knife",
+        "measuring-cup",
+        "serving-bowl"
+      ],
+      "skills": [
+        "Measuring",
+        "Knife safety",
+        "Simmering",
+        "Food storage"
+      ],
+      "allergenNote": "Review packaged ingredients for allergens and cross-contact.",
+      "safety": "Use adult supervision for knives and stovetop heat. Check dried lentils for debris and cook thoroughly per instructions.",
+      "steps": [
+        {
+          "id": "wash-hands",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Wash hands and ready the station",
+          "instruction": "Wash hands and ready the station. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "wash-hands-0",
+              "label": "Apply soap",
+              "icon": "🧼"
+            },
+            {
+              "id": "wash-hands-1",
+              "label": "Scrub for 20 seconds (simulated)",
+              "icon": "🫧"
+            },
+            {
+              "id": "wash-hands-2",
+              "label": "Rinse and dry",
+              "icon": "🚰"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "In a real kitchen wash hands with soap for at least 20 seconds. The simulation uses short clicks."
+        },
+        {
+          "id": "gather-tools",
+          "station": "pantry",
+          "action": "collect",
+          "title": "Set up your cooking station",
+          "instruction": "Choose only the tools needed for this recipe. Distractor tools cost a retry.",
+          "required": [
+            "saucepan",
+            "spoon",
+            "cutting-board",
+            "knife",
+            "measuring-cup",
+            "serving-bowl"
+          ],
+          "choices": [
+            "whisk",
+            "grater",
+            "saucepan",
+            "spoon",
+            "cutting-board",
+            "knife",
+            "measuring-cup",
+            "serving-bowl"
+          ],
+          "tools": [
+            "saucepan",
+            "spoon",
+            "cutting-board",
+            "knife",
+            "measuring-cup",
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Keep clean equipment ready before you start. Use a stable board and adult help with sharp or hot tools."
+        },
+        {
+          "id": "rinse-veg",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Rinse produce",
+          "instruction": "Rinse produce. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "rinse-veg-0",
+              "label": "Use clean running water",
+              "icon": "🚰"
+            },
+            {
+              "id": "rinse-veg-1",
+              "label": "Rinse carrot and pepper",
+              "icon": "🥬"
+            },
+            {
+              "id": "rinse-veg-2",
+              "label": "Turn the tap off",
+              "icon": "💧"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "Rinse fresh produce with running water, not soap. Handle clean foods on a sanitized surface."
+        },
+        {
+          "id": "measure-lentils",
+          "station": "pantry",
+          "action": "measure",
+          "title": "Measure lentil",
+          "instruction": "Add 0.25 cups dry per tap until the simulated demo reaches 1 cups dry.",
+          "ingredient": "lentil",
+          "target": 1,
+          "increment": 0.25,
+          "unit": "cups dry",
+          "tools": [
+            "measuring-cup"
+          ],
+          "ingredients": [
+            "lentil"
+          ],
+          "safety": "Measurements are a classroom demonstration. Actual recipe quantities depend on the household portions and package directions."
+        },
+        {
+          "id": "chop-pepper",
+          "station": "prep",
+          "action": "chop",
+          "title": "Prepare pepper",
+          "ingredient": "pepper",
+          "target": 5,
+          "instruction": "Make 5 simulated careful cuts of pepper. Follow the safe cutting routine.",
+          "tools": [
+            "cutting-board",
+            "knife"
+          ],
+          "ingredients": [
+            "pepper"
+          ],
+          "safety": "Real knives require appropriate adult supervision. Use a stable board, tuck fingertips, and keep the blade pointed away from hands."
+        },
+        {
+          "id": "add-chili",
+          "station": "counter",
+          "action": "combine",
+          "title": "Combine your ingredients",
+          "instruction": "Add and mix the items in the correct order.",
+          "sequence": [
+            {
+              "id": "add-chili-0",
+              "label": "Add lentils and liquid following package directions",
+              "icon": "🫘"
+            },
+            {
+              "id": "add-chili-1",
+              "label": "Add beans and tomatoes",
+              "icon": "🍅"
+            },
+            {
+              "id": "add-chili-2",
+              "label": "Add prepared vegetables",
+              "icon": "🫑"
+            },
+            {
+              "id": "add-chili-3",
+              "label": "Stir ingredients together",
+              "icon": "🥄"
+            }
+          ],
+          "ingredients": [
+            "lentil",
+            "beans",
+            "tomato",
+            "onion",
+            "carrot",
+            "pepper"
+          ],
+          "tools": [
+            "serving-bowl",
+            "spoon"
+          ],
+          "safety": "Use clean utensils and keep food on sanitary surfaces."
+        },
+        {
+          "id": "heat-on",
+          "station": "stove",
+          "action": "heat",
+          "state": "on",
+          "title": "Turn the burner to low",
+          "instruction": "Choose LOW to begin the simulated stovetop step.",
+          "ingredients": [],
+          "tools": [
+            "saucepan"
+          ],
+          "safety": "Real stovetops and hot pans require adult supervision; keep handles inward and never leave cooking unattended."
+        },
+        {
+          "id": "check-4",
+          "station": "stove",
+          "action": "timer",
+          "title": "Check simmering safely",
+          "instruction": "Complete four simulated simmer checks. Real lentil chili needs package/recipe cooking times and thorough cooking.",
+          "target": 4,
+          "unit": "checkpoints",
+          "tools": [],
+          "ingredients": [],
+          "safety": "The simulation does not verify safe food temperature or actual cooking time. Follow a validated recipe, appliance and package directions with adult supervision."
+        },
+        {
+          "id": "stir-5",
+          "station": "stove",
+          "action": "stir",
+          "title": "Stir the simulated chili",
+          "instruction": "Make 5 careful simulated stirs. Avoid splashing or touching hot equipment.",
+          "target": 5,
+          "tools": [
+            "spoon"
+          ],
+          "ingredients": [
+            "lentil",
+            "tomato"
+          ],
+          "safety": "Stir carefully. Steam and hot pans can burn; adults supervise real cooking."
+        },
+        {
+          "id": "heat-off",
+          "station": "stove",
+          "action": "heat",
+          "state": "off",
+          "title": "Shut off the burner",
+          "instruction": "Switch the burner fully OFF before serving.",
+          "ingredients": [],
+          "tools": [
+            "saucepan"
+          ],
+          "safety": "Real stovetops and hot pans require adult supervision; keep handles inward and never leave cooking unattended."
+        },
+        {
+          "id": "plate-portions",
+          "station": "serve",
+          "action": "portion",
+          "title": "Portion the meal",
+          "instruction": "Serve 4 simulated portions. Think about fair portions and family needs.",
+          "target": 4,
+          "tools": [
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Use clean serving utensils. Refrigerate perishable leftovers promptly and follow food-safety guidance."
+        },
+        {
+          "id": "food-safety-check",
+          "station": "serve",
+          "action": "quiz",
+          "title": "Food safety checkpoint",
+          "instruction": "Choose the safest answer before finishing.",
+          "question": "What is the safest way to store leftover chili?",
+          "options": [
+            "Leave at room temperature overnight",
+            "Refrigerate promptly in suitable shallow containers",
+            "Keep the stove on low overnight"
+          ],
+          "correct": 1,
+          "tools": [],
+          "ingredients": [],
+          "safety": "Use the food-safety instruction to choose the safest answer."
+        }
+      ]
+    },
+    {
+      "id": "tofu-stirfry",
+      "version": 2,
+      "difficulty": "Intermediate",
+      "kitchenTitle": "Tofu Veggie Stir-Fry",
+      "intro": "Prepare tofu and vegetables in a simulated hot-pan cooking challenge with soy allergy checks.",
+      "servings": 4,
+      "estimatedMinutes": 25,
+      "ingredientIds": [
+        "tofu",
+        "rice",
+        "broccoli",
+        "pepper",
+        "carrot",
+        "oil"
+      ],
+      "requiredTools": [
+        "saucepan",
+        "spoon",
+        "cutting-board",
+        "knife",
+        "serving-bowl"
+      ],
+      "skills": [
+        "Soy allergen check",
+        "Cross-contamination",
+        "Vegetable prep",
+        "Stovetop control"
+      ],
+      "allergenNote": "Contains soy. Confirm all ingredients and sauce labels.",
+      "safety": "Adult supervision is needed for hot pans and knives. Thoroughly heat the food; clean prep surfaces and utensils.",
+      "steps": [
+        {
+          "id": "wash-hands",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Wash hands and ready the station",
+          "instruction": "Wash hands and ready the station. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "wash-hands-0",
+              "label": "Apply soap",
+              "icon": "🧼"
+            },
+            {
+              "id": "wash-hands-1",
+              "label": "Scrub for 20 seconds (simulated)",
+              "icon": "🫧"
+            },
+            {
+              "id": "wash-hands-2",
+              "label": "Rinse and dry",
+              "icon": "🚰"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "In a real kitchen wash hands with soap for at least 20 seconds. The simulation uses short clicks."
+        },
+        {
+          "id": "gather-tools",
+          "station": "pantry",
+          "action": "collect",
+          "title": "Set up your cooking station",
+          "instruction": "Choose only the tools needed for this recipe. Distractor tools cost a retry.",
+          "required": [
+            "saucepan",
+            "spoon",
+            "cutting-board",
+            "knife",
+            "serving-bowl"
+          ],
+          "choices": [
+            "whisk",
+            "grater",
+            "saucepan",
+            "spoon",
+            "cutting-board",
+            "knife",
+            "serving-bowl"
+          ],
+          "tools": [
+            "saucepan",
+            "spoon",
+            "cutting-board",
+            "knife",
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Keep clean equipment ready before you start. Use a stable board and adult help with sharp or hot tools."
+        },
+        {
+          "id": "wash-stirfry-veg",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Rinse produce",
+          "instruction": "Rinse produce. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "wash-stirfry-veg-0",
+              "label": "Use clean running water",
+              "icon": "🚰"
+            },
+            {
+              "id": "wash-stirfry-veg-1",
+              "label": "Rinse broccoli, peppers, and carrots",
+              "icon": "🥬"
+            },
+            {
+              "id": "wash-stirfry-veg-2",
+              "label": "Turn the tap off",
+              "icon": "💧"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "Rinse fresh produce with running water, not soap. Handle clean foods on a sanitized surface."
+        },
+        {
+          "id": "chop-peppers",
+          "station": "prep",
+          "action": "chop",
+          "title": "Prepare pepper",
+          "ingredient": "pepper",
+          "target": 5,
+          "instruction": "Make 5 simulated careful cuts of pepper. Follow the safe cutting routine.",
+          "tools": [
+            "cutting-board",
+            "knife"
+          ],
+          "ingredients": [
+            "pepper"
+          ],
+          "safety": "Real knives require appropriate adult supervision. Use a stable board, tuck fingertips, and keep the blade pointed away from hands."
+        },
+        {
+          "id": "stirfry-prep",
+          "station": "counter",
+          "action": "combine",
+          "title": "Combine your ingredients",
+          "instruction": "Add and mix the items in the correct order.",
+          "sequence": [
+            {
+              "id": "stirfry-prep-0",
+              "label": "Check tofu label for soy",
+              "icon": "🔎"
+            },
+            {
+              "id": "stirfry-prep-1",
+              "label": "Drain tofu using clean equipment",
+              "icon": "🥡"
+            },
+            {
+              "id": "stirfry-prep-2",
+              "label": "Prepare rice following its package instructions with adult supervision",
+              "icon": "🍚"
+            },
+            {
+              "id": "stirfry-prep-3",
+              "label": "Add prepared vegetables and tofu to clean plate",
+              "icon": "🥕"
+            }
+          ],
+          "ingredients": [
+            "tofu",
+            "rice",
+            "broccoli",
+            "pepper",
+            "carrot"
+          ],
+          "tools": [
+            "serving-bowl",
+            "spoon"
+          ],
+          "safety": "Use clean utensils and keep food on sanitary surfaces."
+        },
+        {
+          "id": "heat-on",
+          "station": "stove",
+          "action": "heat",
+          "state": "on",
+          "title": "Turn the burner to low",
+          "instruction": "Choose LOW to begin the simulated stovetop step.",
+          "ingredients": [],
+          "tools": [
+            "saucepan"
+          ],
+          "safety": "Real stovetops and hot pans require adult supervision; keep handles inward and never leave cooking unattended."
+        },
+        {
+          "id": "stir-5",
+          "station": "stove",
+          "action": "stir",
+          "title": "Stir vegetables and tofu",
+          "instruction": "Make 5 careful simulated stirs. Avoid splashing or touching hot equipment.",
+          "target": 5,
+          "tools": [
+            "spoon"
+          ],
+          "ingredients": [
+            "tofu",
+            "pepper"
+          ],
+          "safety": "Stir carefully. Steam and hot pans can burn; adults supervise real cooking."
+        },
+        {
+          "id": "check-3",
+          "station": "stove",
+          "action": "timer",
+          "title": "Check stir-fry thoroughly heated",
+          "instruction": "Complete three simulated checks. Cooking times and food safety must be verified in a real kitchen.",
+          "target": 3,
+          "unit": "checkpoints",
+          "tools": [],
+          "ingredients": [],
+          "safety": "The simulation does not verify safe food temperature or actual cooking time. Follow a validated recipe, appliance and package directions with adult supervision."
+        },
+        {
+          "id": "heat-off",
+          "station": "stove",
+          "action": "heat",
+          "state": "off",
+          "title": "Shut off the burner",
+          "instruction": "Switch the burner fully OFF before serving.",
+          "ingredients": [],
+          "tools": [
+            "saucepan"
+          ],
+          "safety": "Real stovetops and hot pans require adult supervision; keep handles inward and never leave cooking unattended."
+        },
+        {
+          "id": "plate-portions",
+          "station": "serve",
+          "action": "portion",
+          "title": "Portion the meal",
+          "instruction": "Serve 4 simulated portions. Think about fair portions and family needs.",
+          "target": 4,
+          "tools": [
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Use clean serving utensils. Refrigerate perishable leftovers promptly and follow food-safety guidance."
+        },
+        {
+          "id": "food-safety-check",
+          "station": "serve",
+          "action": "quiz",
+          "title": "Food safety checkpoint",
+          "instruction": "Choose the safest answer before finishing.",
+          "question": "Which allergen needs special attention when using tofu?",
+          "options": [
+            "Soy",
+            "Fish only",
+            "None; tofu has no allergens"
+          ],
+          "correct": 0,
+          "tools": [],
+          "ingredients": [],
+          "safety": "Use the food-safety instruction to choose the safest answer."
+        }
+      ]
+    },
+    {
+      "id": "orange-sunflower-cups",
+      "version": 2,
+      "difficulty": "Beginner",
+      "kitchenTitle": "Orange Sunflower Snack Cups",
+      "intro": "An easy snack with citrus, seeds, and yogurt that emphasizes measurement and cold food safety.",
+      "servings": 4,
+      "estimatedMinutes": 9,
+      "ingredientIds": [
+        "orange",
+        "sunflower",
+        "yogurt"
+      ],
+      "requiredTools": [
+        "cutting-board",
+        "knife",
+        "serving-bowl",
+        "spoon",
+        "measuring-cup"
+      ],
+      "skills": [
+        "Allergen checks",
+        "Produce washing",
+        "Measuring",
+        "Portioning"
+      ],
+      "allergenNote": "May contain milk if using dairy yogurt. Check all package labels.",
+      "safety": "Use clean utensils, rinse oranges, supervise real knife use and keep yogurt refrigerated.",
+      "steps": [
+        {
+          "id": "wash-hands",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Wash hands and ready the station",
+          "instruction": "Wash hands and ready the station. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "wash-hands-0",
+              "label": "Apply soap",
+              "icon": "🧼"
+            },
+            {
+              "id": "wash-hands-1",
+              "label": "Scrub for 20 seconds (simulated)",
+              "icon": "🫧"
+            },
+            {
+              "id": "wash-hands-2",
+              "label": "Rinse and dry",
+              "icon": "🚰"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "In a real kitchen wash hands with soap for at least 20 seconds. The simulation uses short clicks."
+        },
+        {
+          "id": "gather-tools",
+          "station": "pantry",
+          "action": "collect",
+          "title": "Set up your cooking station",
+          "instruction": "Choose only the tools needed for this recipe. Distractor tools cost a retry.",
+          "required": [
+            "cutting-board",
+            "knife",
+            "serving-bowl",
+            "spoon",
+            "measuring-cup"
+          ],
+          "choices": [
+            "whisk",
+            "grater",
+            "cutting-board",
+            "knife",
+            "serving-bowl",
+            "spoon",
+            "measuring-cup"
+          ],
+          "tools": [
+            "cutting-board",
+            "knife",
+            "serving-bowl",
+            "spoon",
+            "measuring-cup"
+          ],
+          "ingredients": [],
+          "safety": "Keep clean equipment ready before you start. Use a stable board and adult help with sharp or hot tools."
+        },
+        {
+          "id": "wash-oranges",
+          "station": "sink",
+          "action": "sequence",
+          "title": "Rinse produce",
+          "instruction": "Rinse produce. Select the tasks in order.",
+          "sequence": [
+            {
+              "id": "wash-oranges-0",
+              "label": "Use clean running water",
+              "icon": "🚰"
+            },
+            {
+              "id": "wash-oranges-1",
+              "label": "Rinse oranges",
+              "icon": "🥬"
+            },
+            {
+              "id": "wash-oranges-2",
+              "label": "Turn the tap off",
+              "icon": "💧"
+            }
+          ],
+          "tools": [],
+          "ingredients": [],
+          "safety": "Rinse fresh produce with running water, not soap. Handle clean foods on a sanitized surface."
+        },
+        {
+          "id": "segment-orange",
+          "station": "prep",
+          "action": "chop",
+          "title": "Prepare orange",
+          "ingredient": "orange",
+          "target": 4,
+          "instruction": "Make 4 simulated careful cuts of orange. Follow the safe cutting routine.",
+          "tools": [
+            "cutting-board",
+            "knife"
+          ],
+          "ingredients": [
+            "orange"
+          ],
+          "safety": "Real knives require appropriate adult supervision. Use a stable board, tuck fingertips, and keep the blade pointed away from hands."
+        },
+        {
+          "id": "measure-seeds",
+          "station": "pantry",
+          "action": "measure",
+          "title": "Measure sunflower",
+          "instruction": "Add 1 tablespoons per tap until the simulated demo reaches 4 tablespoons.",
+          "ingredient": "sunflower",
+          "target": 4,
+          "increment": 1,
+          "unit": "tablespoons",
+          "tools": [
+            "measuring-cup"
+          ],
+          "ingredients": [
+            "sunflower"
+          ],
+          "safety": "Measurements are a classroom demonstration. Actual recipe quantities depend on the household portions and package directions."
+        },
+        {
+          "id": "build-snack",
+          "station": "counter",
+          "action": "combine",
+          "title": "Combine your ingredients",
+          "instruction": "Add and mix the items in the correct order.",
+          "sequence": [
+            {
+              "id": "build-snack-0",
+              "label": "Add chilled yogurt",
+              "icon": "🥣"
+            },
+            {
+              "id": "build-snack-1",
+              "label": "Add orange segments",
+              "icon": "🍊"
+            },
+            {
+              "id": "build-snack-2",
+              "label": "Sprinkle sunflower seeds",
+              "icon": "🌻"
+            }
+          ],
+          "ingredients": [
+            "orange",
+            "sunflower",
+            "yogurt"
+          ],
+          "tools": [
+            "serving-bowl",
+            "spoon"
+          ],
+          "safety": "Use clean utensils and keep food on sanitary surfaces."
+        },
+        {
+          "id": "plate-portions",
+          "station": "serve",
+          "action": "portion",
+          "title": "Portion the meal",
+          "instruction": "Serve 4 simulated portions. Think about fair portions and family needs.",
+          "target": 4,
+          "tools": [
+            "serving-bowl"
+          ],
+          "ingredients": [],
+          "safety": "Use clean serving utensils. Refrigerate perishable leftovers promptly and follow food-safety guidance."
+        },
+        {
+          "id": "food-safety-check",
+          "station": "serve",
+          "action": "quiz",
+          "title": "Food safety checkpoint",
+          "instruction": "Choose the safest answer before finishing.",
+          "question": "What should you do with yogurt snack cups not served immediately?",
+          "options": [
+            "Keep refrigerated",
+            "Set them on a sunny windowsill",
+            "Leave out all day"
+          ],
+          "correct": 0,
+          "tools": [],
+          "ingredients": [],
+          "safety": "Use the food-safety instruction to choose the safest answer."
+        }
+      ]
     }
-  ]
+  ],
+  "version": "6.0",
+  "update": "Nine more interactive hands-on recipes; ingredient-specific actions and recipe practice records."
 }
